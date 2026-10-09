@@ -1,0 +1,7 @@
+Category,Points,Question,Answer
+Interfaces,100,T/F? Interfaces have only method header no method bodies,T
+Interfaces,200,T/F? Interfaces can have instance variables,F
+Interfaces,300,How do we often think of interfaces in terms of an agreement?,Contract
+Inner Classes,100,T/F? Inner class can access outer class private instance variables,T
+Inner Classes,200,Why create an inner class instead of a standalone class?,Only useful to outer class
+Inner Classes,300,How do you instantiate an inner class object?,Outer.Inner inner = (new Outer()).new Inner();
