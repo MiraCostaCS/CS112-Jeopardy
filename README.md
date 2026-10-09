@@ -193,7 +193,7 @@ History,200,In what year did World War II end?,1945
 ### Running in IntelliJ IDEA
 
 1. Open IntelliJ IDEA and select **File > Open...**.
-2. Select the `JavaFX_Jeopardy_MVC` root directory.
+2. Select the `CS112-Jeopardy` root directory.
 3. Allow Maven to import and resolve dependencies from `pom.xml`.
 4. Navigate to `src/main/java/com/jeopardy/JeopardyApp.java`.
 5. Right-click `JeopardyApp.java` and select **Run 'JeopardyApp.main()'**.
