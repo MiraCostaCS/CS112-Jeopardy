@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 
-<BorderPane style="-fx-background-color: #000B5D;" 
+<BorderPane style="-fx-background-color: #7dc9ec;"
             xmlns="http://javafx.com/javafx/21" 
             xmlns:fx="http://javafx.com/fxml/1" 
             fx:controller="com.jeopardy.controller.MainController">
@@ -17,9 +17,9 @@
             <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
          </padding>
          <children>
-            <Label style="-fx-font-family: 'Impact'; -fx-font-size: 36px; -fx-text-fill: GOLD;" text="JEOPARDY!" />
+            <Label style="-fx-font-family: 'Impact'; -fx-font-size: 36px; -fx-text-fill: #154670;" text="WARMUP GAME!" />
             <Label fx:id="scoreLabel" style="-fx-font-family: 'Arial'; -fx-font-weight: bold; -fx-font-size: 22px; -fx-text-fill: WHITE;" text="Score: $0" />
-            <Button onAction="#handleLoadCSV" style="-fx-background-color: #D6A800; -fx-text-fill: black; -fx-font-weight: bold;" text="Load CSV File" />
+            <Button onAction="#handleLoadCSV" style="-fx-background-color: #96c45c; -fx-text-fill: black; -fx-font-weight: bold;" text="Load CSV File" />
          </children>
       </HBox>
    </top>

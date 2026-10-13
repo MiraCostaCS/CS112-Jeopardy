@@ -84,8 +84,8 @@ public class MainController {
         for (String category : categories) {
             // Category Header Button
             Button catHeader = new Button(category.toUpperCase());
-            catHeader.setPrefSize(160, 60);
-            catHeader.setStyle("-fx-background-color: #060CE9; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px;");
+            catHeader.setPrefSize(300, 60);
+            catHeader.setStyle("-fx-background-color: #060CE9; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 30px;");
             catHeader.setDisable(true);
             boardGrid.add(catHeader, col, 0);
 
@@ -95,8 +95,8 @@ public class MainController {
             int row = 1;
             for (Clue clue : clues) {
                 Button clueBtn = new Button("$" + clue.getPoints());
-                clueBtn.setPrefSize(160, 80);
-                clueBtn.setStyle("-fx-background-color: #060CE9; -fx-text-fill: #D6A800; -fx-font-size: 20px; -fx-font-weight: bold;");
+                clueBtn.setPrefSize(300, 80);
+                clueBtn.setStyle("-fx-background-color: #2596be; -fx-text-fill: #ffffff; -fx-font-size: 30px; -fx-font-weight: bold;");
 
                 clueBtn.setOnAction(e -> openQuestionDialog(clue, clueBtn));
 
@@ -128,7 +128,7 @@ public class MainController {
                 updateScoreDisplay();
                 clueBtn.setText("");
                 clueBtn.setDisable(true);
-                clueBtn.setStyle("-fx-background-color: #000533;");
+                clueBtn.setStyle("-fx-background-color: #2596be;");
             });
 
             Stage dialogStage = new Stage();
@@ -136,6 +136,7 @@ public class MainController {
             dialogStage.initModality(Modality.WINDOW_MODAL);
             dialogStage.initOwner(boardGrid.getScene().getWindow());
             dialogStage.setScene(new Scene(root));
+            dialogStage.setWidth(600);
             dialogStage.showAndWait();
 
         } catch (IOException e) {

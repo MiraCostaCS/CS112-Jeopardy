@@ -65,6 +65,10 @@ public class QuestionController {
 
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
+        //alert.setResizable(true);
+        alert.getDialogPane().setMinWidth(400);
+        Label contentLabel = (Label) alert.getDialogPane().lookup(".content.label");
+        contentLabel.setStyle("-fx-font-size: 30px;");
 
         if (correct) {
             alert.setTitle("Correct!");
